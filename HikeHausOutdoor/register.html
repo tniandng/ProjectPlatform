@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - HikeHausOutdoor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Daftar Akun</h2>
+      <form id="registerForm">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input
+            type="text"
+            id="reg-username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" id="reg-email" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <i data-feather="lock"></i>
+          <input
+            type="password"
+            id="reg-password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit">Daftar</button>
+      </form>
+      <p id="registerMessage" style="color: red; margin-top: 10px"></p>
+      <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+    </div>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>

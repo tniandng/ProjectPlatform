@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - HikeHausOutdoor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login HikeHaus</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input
+            type="text"
+            id="username"
+            placeholder="Masukkan username"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <i data-feather="lock"></i>
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan password"
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="loginMessage" style="color: red; margin-top: 10px"></p>
+    </div>
+
+    <script src="js/login.js"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
